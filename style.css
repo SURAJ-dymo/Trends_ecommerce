@@ -1,0 +1,349 @@
+*{
+font-family: 'Abril Fatface', cursive;
+font-family: 'Catamaran', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #eeee;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #eeee;
+    height: 60px;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px gray;
+}
+.mobile-nav{
+    display: none;
+}
+.logo h1{
+   font-size: 26px;
+}
+#menus {
+    display: none;
+}
+.logo h1:hover{
+    cursor: pointer;
+    color:rgb(4,138,138);
+}
+
+#home{
+    color:rgb(4,138,138);
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    margin: 22px;
+    font-size: 20px;
+    
+}
+nav ul li i{
+    font-size: 22px;
+   
+    
+}
+
+
+ul li a:hover{
+    color:rgb(4,138,138);
+    border-bottom:2px solid black ;
+    cursor: pointer;
+}
+ul li i:hover{
+   color: gray;
+    cursor: pointer;
+}
+
+
+.main{
+display: flex;
+justify-content: space-around;
+
+}
+.mainText{
+    margin-top: 144px;
+    font-size: 24px;
+    padding-left: 40px;
+   
+}
+.mainText h1{
+    font-size: 50px;
+    color:rgb(4,138,138);
+   
+}
+.main img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#tops{
+    color: black;
+}
+.main button{
+    width: 145px;
+    height: 40px;
+   background-color:rgb(4,138,138);
+   font-size: 22px;
+   color: white;
+   margin-top: 10px;
+  
+}
+.main button:hover{
+    border: 2px solid rgb(4,138,138);;
+    background: transparent;
+    color:rgb(4,138,138);
+    cursor: pointer;
+}
+.trend .head{
+    text-align: center;
+    padding: 33px;
+    
+}
+.trend .head span{
+    color:rgb(4,138,138);
+}
+.card{
+    display: flex;
+    justify-content: center;
+
+}
+.crd{
+    width: 350px;
+    height: 550px;
+    background-color: #fff;
+    margin-inline: 10px;
+
+    
+}
+.crd:hover{
+    width: 351px;
+    height: 550px;
+    background-color:gray;
+    cursor: pointer;
+}
+
+.crd img{
+    width: 85%;
+   margin: 0px 26px;
+   border-radius: 15px;
+
+
+}
+.crd .crdText{
+ text-align: center;
+}
+.crd button{
+    width: 150px;
+    height: 35px;
+   background-color:rgb(4,138,138);
+   font-size: 22px;
+   color: white;
+   margin-top: 10px;
+
+}
+.crd button:hover{
+    border: 2px solid rgb(4,138,138);
+    background: transparent;
+    color:rgb(4,138,138);
+    cursor: pointer;
+}
+.blogtrend{
+    text-align: center;
+    
+
+}
+.bloghead{
+    margin: 20px;
+}
+.blogtrend span{
+   
+    color:  rgb(4,138,138)
+}
+.Blogcard{
+   
+    display: flex;
+    justify-content: space-around;
+   
+}
+.blog{
+    width: 600px;
+    height: 200;
+    display: flex;
+    border: 1px solid  rgb(4,138,138);
+
+}
+
+.blog img{
+    width: 50%;
+}
+
+.blogText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.blogText a{
+    width: 130px;
+    padding: 4px;
+    height: 35px;
+    background:rgb(4,138,138);
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-decoration: none;
+}
+.blogText a:hover{
+   
+    background:rgb(231, 240, 240);
+   color: black;
+   border: 1px solid rgb(4,138,138);
+}
+
+.letter{
+    background: rgb(4,4,100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+}
+.inp{
+    display: flex;
+}
+.inp input{
+    width: 330px;
+    height: 33px;
+    outline: none;
+    font-size: 18px;
+    padding: 15px;
+}
+.inp button{
+    width: 100px;
+    height: 34px;
+    background: aqua;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+}
+.footer .footerText{
+    margin-inline: 55px;
+}
+.footerText p{
+    margin-top: 10px;
+}
+
+
+@media (max-width:600px){
+.mobile-nav{
+    /* display: block; */
+    position: absolute;
+    width: 50vh;
+    height: 100vh;
+    background: gray;
+    top: 0px;
+
+
+}
+.mobile-nav span{
+    color: white;
+    cursor: pointer;
+}
+.fa-xmark{
+    align-self: flex-end;
+    margin: 25px 25px;
+    color: white;
+    cursor: pointer;
+}
+#menus{
+    display: block;
+    font-size: 22px;
+}
+#menus:hover{
+    color: gray;
+}
+.mob-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.mob-item span{
+    margin: 20px;
+}
+    nav ul{
+         display: none;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .mainText{
+        text-align: center;
+        margin-top: -50px;
+        font-size: 24px;
+        padding-left: 40px;
+       
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    
+    }
+    .crd{
+        margin-bottom: 20px;
+    }
+    .Blogcard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        margin-top: 10px;
+        height: 450px;
+    }
+       .blog a{
+        margin-left: 150px;
+       } 
+       .letter{
+        background: rgb(4,4,100);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin-top: 20px;
+        padding: 25px;
+    }
+    .letter .inp{
+margin-top: 10px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
